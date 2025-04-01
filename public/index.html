@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Авторизация</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <button id="theme-toggle">Темная тема</button>
+  <div id="auth-section">
+    <div id="login-form" class="auth-form">
+      <h2>Вход</h2>
+      <form>
+        <input type="text" id="username" placeholder="Логин" required>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+
+    <div id="register-form" class="auth-form">
+      <h2>Регистрация</h2>
+      <form>
+        <input type="text" id="reg-username" placeholder="Логин (3-20 символов)" required>
+        <input type="password" id="reg-password" placeholder="Пароль (от 6 символов)" required>
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+    <p id="error-message" class="error"></p>
+  </div>
+
+ <div id="profile-section" class="hidden">
+ <h2>Профиль</h2>
+ <p>Добро пожаловать, <span id="username-display"></span>!</p>
+ <button id="logout-btn">Выйти</button>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>

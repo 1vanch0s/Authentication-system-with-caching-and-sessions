@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .auth-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-form input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .auth-form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #profile-section {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  /* Стили для тем */
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #f0f0f0;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #222222;
+    --text-color: #ffffff;
+    --primary-color: #444444;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .auth-form, #profile-section {
+    background-color: var(--primary-color);
+  }
+  
+  #theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
